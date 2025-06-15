@@ -1,0 +1,47 @@
+# This file contains the connection configurations for various services used in the Pactravel project. Wil be added to CLI
+sources-conn:
+  conn_type: postgres
+  description: ''
+  extra: ''
+  host: data_source_pactravel
+  login: postgres
+  password: postgres
+  port: 5432
+  schema: pactravel
+minio:
+  conn_type: aws
+  description: ''
+  extra: '{"endpoint_url": "minio:9000"}'
+  host: ''
+  login: minio
+  password: minio123
+  port: null
+  schema: ''
+staging-conn:
+  conn_type: postgres
+  description: ''
+  extra: ''
+  host: warehouse-db
+  login: postgres
+  password: postgres
+  port: 5432
+  schema: warehouse
+warehouse-conn:
+  conn_type: postgres
+  description: ''
+  extra: ''
+  host: warehouse-db
+  login: postgres
+  password: postgres
+  port: 5432
+  schema: warehouse
+slack-notifier:
+  conn_type: http
+  description: ''
+  extra: ''
+  host: ''
+  login: ''
+  password: "https://hooks.slack.com/services/"
+  port: null
+  schema: ''
+

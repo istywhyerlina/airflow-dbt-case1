@@ -1,0 +1,25 @@
+{
+    "incremental":"True",
+    "tables_to_extract": "['aircrafts_data', 'airports_data', 'bookings', 'tickets', 'seats', 'flights', 'ticket_flights', 'boarding_passes']",
+    "tables_to_transform":"['dim_aircrafts', 'dim_airport', 'dim_passenger', 'dim_seat', 'fct_boarding_pass', 'fct_booking_ticket', 'fct_flight_activity', 'fct_seat_occupied_daily']",
+    "tables_to_load": {
+        "aircrafts_data": "aircraft_code",
+        "airports_data": "airport_code",
+        "bookings": "book_ref",
+        "tickets": "ticket_no",
+        "seats": [
+            "aircraft_code",
+            "seat_no"
+        ],
+        "flights": "flight_id",
+        "ticket_flights": [
+            "ticket_no",
+            "flight_id"
+        ],
+        "boarding_passes": [
+            "ticket_no",
+            "flight_id"
+        ]
+
+    }
+}

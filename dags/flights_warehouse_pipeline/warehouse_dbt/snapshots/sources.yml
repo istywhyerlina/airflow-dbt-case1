@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging
+    database: warehouse
+    schema: stg
+    tables:
+      - name: aircrafts_data
+      - name: airports_data
+      - name: boarding_passes
+      - name: bookings
+      - name: flights
+      - name: seats
+      - name: tickets
+      - name: ticket_flights
